@@ -4,15 +4,28 @@ import os
 import sys
 import xmltodict
 import webbrowser
+import pdfkit
+import configparser
+from collections import defaultdict 
+config = pdfkit.configuration(wkhtmltopdf='C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe')
 
-def xml_data():
-        with open('danfe.xml') as fd:
-                doc = xmltodict.parse(fd.read())
+with open('danfe.xml') as fd:
+                doc = xmltodict.parse(fd.read())               
+print(doc['NFe']['infNFe']['emit']['enderEmit'])
+#print(doc['NFe']['infNFe']['ide']['cDV'])
+#doc['NFe']['infNFe']['det']['@nItem']['prod'].split
+#prod = doc['NFe']['infNFe']['det']['@nItem']['prod']
+#print(prod)
+
+#int_cDV = int(doc['NFe']['infNFe']['ide']['cDV'])
+#int_cUF = int(doc['NFe']['infNFe']['ide']['cUF'])
+#int_cDVcUF = int_cUF + int_cDV
+#str_cDVncUF = str(int_cDVcUF)
+#print(str_cDVncUF)
 
         # doc['NFe']['@xmlns'] # == u'an attribute'
         # doc['NFe']['infNFe']['ide']['cUF'] # == [u'elements', u'more elements']
-        print(doc['NFe']['infNFe']['ide']['cUF'])
-        print(doc['NFe']['infNFe']['ide']['cNF'])
+        # doc['NFe']['infNFe']['ide']['cNF']
 
 #def print_html(string):
 #
@@ -23,10 +36,8 @@ def xml_data():
 #
 #print_html("")
 
-def print_html(cUF,cNF):
-
-   file = open("empty.html", 'w')
-   file.write("""
+file = open("nfe.html", 'w')
+file.write("""
    <style type="text/css">
     @media print {
         @page {
@@ -405,7 +416,7 @@ def print_html(cUF,cNF):
                             [ds_company_neighborhood] - [nu_company_cep]
                         </span>
                         <span class="block">
-                          """  + cUF + """ - """ + cNF + """ - Fone: [nl_company_phone_number]
+                          """  + doc['NFe']['infNFe']['ide']['cUF'] + """ - """ + doc['NFe']['infNFe']['ide']['cNF'] + """ - Fone: [nl_company_phone_number]
                         </span>
                     </td>
                     <td rowspan="3" class="txtc txt-upper" style="width: 34mm; height: 29.5mm;">
@@ -559,7 +570,7 @@ def print_html(cUF,cNF):
                                     </td>
                                     <td style="width: 28mm">
                                         <span class="nf-label">UF</span>
-                                        <span class="info">[ds_client_uf]</span>
+                                        <span class="info"></span>
                                     </td>
                                     <td style="width: 51mm">
                                         <span class="nf-label">INSCRIÇÃO ESTADUAL</span>
@@ -776,6 +787,22 @@ def print_html(cUF,cNF):
                         <th class="aliqIcms">ALIQ.ICMS</th>
                         <th class="aliqIpi">ALIQ.IPI</th>
                     </tr>
+                    <tr>
+                        <td>1234</td>
+                        <td>Comida</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
                 </thead>
                 <tbody>
                     [items]
@@ -826,10 +853,8 @@ def print_html(cUF,cNF):
     </div>
 </div>
 """)
-   file.close()
-   webbrowser.open("empty.html")
-
-print_html("35", "518005127")
+file.close()
+#pdfkit.from_file('nfe.html', 'nfe.pdf', configuration=config)
 
 
 

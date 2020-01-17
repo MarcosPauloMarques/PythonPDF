@@ -1,4 +1,5 @@
-<style type="text/css">
+
+   <style type="text/css">
     @media print {
         @page {
             margin-left: 15mm;
@@ -342,13 +343,13 @@
             <tbody>
                 <tr>
                     <td colspan="2" class="txt-upper">
-                        Recebemos de [ds_company_issuer_name] os produtos e servi√ßos constantes na nota fiscal indicada
+                        Recebemos de [ds_company_issuer_name] os produtos e serviÁos constantes na nota fiscal indicada
                         ao lado
                     </td>
                     <td rowspan="2" class="tserie txt-center">
                         <span class="font-12" style="margin-bottom: 5px;">NF-e</span>
-                        <span>N¬∫ [nl_invoice]</span>
-                        <span>S√©rie [ds_invoice_serie]</span>
+                        <span>N∫ [nl_invoice]</span>
+                        <span>SÈrie [ds_invoice_serie]</span>
                     </td>
                 </tr>
                 <tr>
@@ -356,7 +357,7 @@
                         <span class="nf-label">Data de recebimento</span>
                     </td>
                     <td style="width: 124.6mm">
-                        <span class="nf-label">Identifica√ß√£o de assinatura do Recebedor</span>
+                        <span class="nf-label">IdentificaÁ„o de assinatura do Recebedor</span>
                     </td>
                 </tr>
             </tbody>
@@ -376,32 +377,32 @@
                             [ds_company_neighborhood] - [nu_company_cep]
                         </span>
                         <span class="block">
-                            [ds_company_city_name] - [ds_company_uf]- Fone: [nl_company_phone_number]
+                          35 - 518005127 - Fone: [nl_company_phone_number]
                         </span>
                     </td>
                     <td rowspan="3" class="txtc txt-upper" style="width: 34mm; height: 29.5mm;">
                         <h3 class="title">Danfe</h3>
-                        <p class="mb2">Documento auxiliar da Nota Fiscal Eletr√¥nica </p>
+                        <p class="mb2">Documento auxiliar da Nota Fiscal EletrÙnica </p>
                         <p class="entradaSaida mb2">
                             <span class="identificacao">
                                 <span>[ds_code_operation_type]</span>
                             </span>
                             <span class="legenda">
                                 <span>0 - Entrada</span>
-                                <span>1 - Sa√≠da</span>
+                                <span>1 - SaÌda</span>
                             </span>
                         </p>
                         <p>
                             <span class="block bold">
-                                <span>N¬∫</span>
+                                <span>N∫</span>
                                 <span>[nl_invoice]</span>
                             </span>
                             <span class="block bold">
-                                <span>S√âRIE:</span>
+                                <span>S…RIE:</span>
                                 <span>[ds_invoice_serie]</span>final
                             </span>
                             <span class="block">
-                                <span>P√°gina</span>
+                                <span>P·gina</span>
                                 <span>[actual_page]</span>
                                 <span>de</span>
                                 <span>[total_pages]</span>
@@ -427,12 +428,12 @@
                 </tr>
             </tbody>
         </table>
-        <!-- Natureza da Opera√ß√£o -->
+        <!-- Natureza da OperaÁ„o -->
         <table cellpadding="0" cellspacing="0" class="boxNaturezaOperacao no-top" border="1">
             <tbody>
                 <tr>
                     <td>
-                        <span class="nf-label">NATUREZA DA OPERA√á√ÉO</span>
+                        <span class="nf-label">NATUREZA DA OPERA«√O</span>
                         <span class="info">[_ds_transaction_nature]</span>
                     </td>
                     <td style="width: 84.7mm;">
@@ -443,16 +444,16 @@
             </tbody>
         </table>
 
-        <!-- Inscri√ß√£o -->
+        <!-- InscriÁ„o -->
         <table cellpadding="0" cellspacing="0" class="boxInscricao no-top" border="1">
             <tbody>
                 <tr>
                     <td>
-                        <span class="nf-label">INSCRI√á√ÉO ESTADUAL</span>
+                        <span class="nf-label">INSCRI«√O ESTADUAL</span>
                         <span class="info">[nl_company_ie]</span>
                     </td>
                     <td style="width: 67.5mm;">
-                        <span class="nf-label">INSCRI√á√ÉO ESTADUAL DO SUBST. TRIB.</span>
+                        <span class="nf-label">INSCRI«√O ESTADUAL DO SUBST. TRIB.</span>
                         <span class="info">[nl_company_ie_st]</span>
                     </td>
                     <td style="width: 64.3mm">
@@ -463,8 +464,8 @@
             </tbody>
         </table>
 
-        <!-- Destinat√°rio/Emitente -->
-        <p class="area-name">Destinat√°rio/Emitente</p>
+        <!-- Destinat·rio/Emitente -->
+        <p class="area-name">Destinat·rio/Emitente</p>
         <table cellpadding="0" cellspacing="0" class="boxDestinatario" border="1">
             <tbody>
                 <tr>
@@ -473,7 +474,7 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <span class="nf-label">NOME/RAZ√ÉO SOCIAL</span>
+                                        <span class="nf-label">NOME/RAZ√O SOCIAL</span>
                                         <span class="info">[ds_client_receiver_name]</span>
                                     </td>
                                     <td style="width: 40mm">
@@ -485,7 +486,7 @@
                         </table>
                     </td>
                     <td style="width: 22mm">
-                        <span class="nf-label">DATA DE EMISS√ÉO</span>
+                        <span class="nf-label">DATA DE EMISS√O</span>
                         <span class="info">[dt_invoice_issue]</span>
                     </td>
                 </tr>
@@ -495,7 +496,7 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <span class="nf-label">ENDERE√áO</span>
+                                        <span class="nf-label">ENDERE«O</span>
                                         <span class="info">[ds_client_address]</span>
                                     </td>
                                     <td style="width: 47mm;">
@@ -511,7 +512,7 @@
                         </table>
                     </td>
                     <td>
-                        <span class="nf-label">DATA DE ENTR./SA√çDA</span>
+                        <span class="nf-label">DATA DE ENTR./SAÕDA</span>
                         <span class="info">[dt_input_output]</span>
                     </td>
                 </tr>
@@ -521,7 +522,7 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <span class="nf-label">MUNIC√çPIO</span>
+                                        <span class="nf-label">MUNICÕPIO</span>
                                         <span class="info">[ds_client_city_name]</span>
                                     </td>
                                     <td style="width: 34mm">
@@ -530,10 +531,10 @@
                                     </td>
                                     <td style="width: 28mm">
                                         <span class="nf-label">UF</span>
-                                        <span class="info">[ds_client_uf]</span>
+                                        <span class="info"></span>
                                     </td>
                                     <td style="width: 51mm">
-                                        <span class="nf-label">INSCRI√á√ÉO ESTADUAL</span>
+                                        <span class="nf-label">INSCRI«√O ESTADUAL</span>
                                         <span class="info">[ds_client_ie]</span>
                                     </td>
                                 </tr>
@@ -541,7 +542,7 @@
                         </table>
                     </td>
                     <td>
-                        <span class="nf-label">HORA ENTR./SA√çDA</span>
+                        <span class="nf-label">HORA ENTR./SAÕDA</span>
                         <span id="info">[hr_input_output]</span>
                     </td>
                 </tr>
@@ -560,7 +561,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            <span class="nf-label label-small">BASE DE C√ÅLC. DO ICMS</span>
+                            <span class="nf-label label-small">BASE DE C¡LC. DO ICMS</span>
                             <span class="info">[tot_bc_icms]</span>
                         </td>
                         <td>
@@ -568,7 +569,7 @@
                             <span class="info">[tot_icms]</span>
                         </td>
                         <td>
-                            <span class="nf-label label-small" style="font-size: 4pt;">BASE DE C√ÅLC. DO ICMS ST</span>
+                            <span class="nf-label label-small" style="font-size: 4pt;">BASE DE C¡LC. DO ICMS ST</span>
                             <span class="info">[tot_bc_icms_st]</span>
                         </td>
                         <td>
@@ -576,7 +577,7 @@
                             <span class="info">[tot_icms_st]</span>
                         </td>
                         <td>
-                            <span class="nf-label label-small">V. IMP. IMPORTA√á√ÉO</span>
+                            <span class="nf-label label-small">V. IMP. IMPORTA«√O</span>
                             <span class="info"></span>
                         </td>
                         <td>
@@ -643,7 +644,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <span class="nf-label">RAZ√ÉO SOCIAL</span>
+                        <span class="nf-label">RAZ√O SOCIAL</span>
                         <span class="info">[ds_transport_carrier_name]</span>
                     </td>
                     <td class="freteConta" style="width: 32mm">
@@ -652,10 +653,10 @@
                             <span class="info">[ds_transport_code_shipping_type]</span>
                         </div>
                         <p>0 - Emitente</p>
-                        <p>1 - Destinat√°rio</p>
+                        <p>1 - Destinat·rio</p>
                     </td>
                     <td style="width: 17.3mm">
-                        <span class="nf-label">C√ìDIGO ANTT</span>
+                        <span class="nf-label">C”DIGO ANTT</span>
                         <span class="info">[ds_transport_rntc]</span>
                     </td>
                     <td style="width: 24.5mm">
@@ -678,11 +679,11 @@
             <tbody>
                 <tr>
                     <td class="field endereco">
-                        <span class="nf-label">ENDERE√áO</span>
+                        <span class="nf-label">ENDERE«O</span>
                         <span class="content-spacer info">[ds_transport_address]</span>
                     </td>
                     <td style="width: 32mm">
-                        <span class="nf-label">MUNIC√çPIO</span>
+                        <span class="nf-label">MUNICÕPIO</span>
                         <span class="info">[ds_transport_city]</span>
                     </td>
                     <td style="width: 31mm">
@@ -704,7 +705,7 @@
                         <span class="content-spacer info">[nu_transport_amount_transported_volumes]</span>
                     </td>
                     <td style="width: 31.4mm">
-                        <span class="nf-label">ESP√âCIE</span>
+                        <span class="nf-label">ESP…CIE</span>
                         <span class="info">[ds_transport_type_volumes_transported]</span>
                     </td>
                     <td style="width: 31mm">
@@ -712,7 +713,7 @@
                         <span class="info">[ds_transport_mark_volumes_transported]</span>
                     </td>
                     <td style="width: 31.5mm">
-                        <span class="nf-label">NUMERA√á√ÉO</span>
+                        <span class="nf-label">NUMERA«√O</span>
                         <span class="info">[ds_transport_number_volumes_transported]</span>
                     </td>
                     <td style="width: 31.5mm">
@@ -720,20 +721,20 @@
                         <span class="info">[vl_transport_gross_weight]</span>
                     </td>
                     <td style="width: 32.5mm">
-                        <span class="nf-label">PESO L√çQUIDO</span>
+                        <span class="nf-label">PESO LÕQUIDO</span>
                         <span class="info">[vl_transport_net_weight]</span>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <!-- Dados do produto/servi√ßo -->
-        <p class="area-name">Dados do produto/servi√ßo</p>
+        <!-- Dados do produto/serviÁo -->
+        <p class="area-name">Dados do produto/serviÁo</p>
         <div class="wrapper-border">
             <table cellpadding="0" cellspacing="0" border="1" class="boxProdutoServico">
                 <thead class="listProdutoServico" id="table">
                     <tr class="titles">
-                        <th class="cod" style="width: 15.5mm">C√ìDIGO</th>
-                        <th class="descrit" style="width: 66.1mm">DESCRI√á√ÉO DO PRODUTO/SERVI√áO</th>
+                        <th class="cod" style="width: 15.5mm">C”DIGO</th>
+                        <th class="descrit" style="width: 66.1mm">DESCRI«√O DO PRODUTO/SERVI«O</th>
                         <th class="ncmsh">NCMSH</th>
                         <th class="cst">CST</th>
                         <th class="cfop">CFOP</th>
@@ -747,28 +748,43 @@
                         <th class="aliqIcms">ALIQ.ICMS</th>
                         <th class="aliqIpi">ALIQ.IPI</th>
                     </tr>
+                    <tr>
+                        <td>1234</td>
+                        <td>Comida</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
                 </thead>
                 <tbody>
                     [items]
                 </tbody>
             </table>
         </div>
-
         <!-- Calculo de ISSQN -->
         <p class="area-name">Calculo do issqn</p>
         <table cellpadding="0" cellspacing="0" border="1" class="boxIssqn">
             <tbody>
                 <tr>
                     <td class="field inscrMunicipal">
-                        <span class="nf-label">INSCRI√á√ÉO MUNICIPAL</span>
+                        <span class="nf-label">INSCRI«√O MUNICIPAL</span>
                         <span class="info txt-center">[ds_company_im]</span>
                     </td>
                     <td class="field valorTotal">
-                        <span class="nf-label">VALOR TOTAL DOS SERVI√áOS</span>
+                        <span class="nf-label">VALOR TOTAL DOS SERVI«OS</span>
                         <span class="info txt-right">[vl_total_serv]</span>
                     </td>
                     <td class="field baseCalculo">
-                        <span class="nf-label">BASE DE C√ÅLCULO DO ISSQN</span>
+                        <span class="nf-label">BASE DE C¡LCULO DO ISSQN</span>
                         <span class="info txt-right">[tot_bc_issqn]</span>
                     </td>
                     <td class="field valorIssqn">
@@ -785,7 +801,7 @@
             <tbody>
                 <tr>
                     <td class="field infoComplementar">
-                        <span class="nf-label">INFORMA√á√ïES COMPLEMENTARES</span>
+                        <span class="nf-label">INFORMA«’ES COMPLEMENTARES</span>
                         <span>[ds_additional_information]</span>
                     </td>
                     <td class="field reservaFisco" style="width: 85mm; height: 24mm">
