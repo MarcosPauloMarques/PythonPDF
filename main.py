@@ -12,6 +12,11 @@ config = pdfkit.configuration(wkhtmltopdf='C:\\Program Files\\wkhtmltopdf\\bin\\
 with open('danfe.xml') as fd:
                 doc = xmltodict.parse(fd.read())               
 print(doc['NFe']['infNFe']['emit']['enderEmit'])
+list = doc['NFe']['infNFe']['emit']['enderEmit']
+list = [i.split()[0] for i in list]
+#list = [i.split('<')[0] for i in list]
+print(list)
+
 #print(doc['NFe']['infNFe']['ide']['cDV'])
 #doc['NFe']['infNFe']['det']['@nItem']['prod'].split
 #prod = doc['NFe']['infNFe']['det']['@nItem']['prod']
